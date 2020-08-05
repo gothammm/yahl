@@ -1,11 +1,12 @@
 {
   "name": "yahl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A micro-library that provides helper / utility functions for your day-to-day js code.",
-  "main": "index.js",
+  "main": "src",
   "dependencies": {},
   "devDependencies": {
     "ava": "^3.11.1",
+    "nyc": "^15.1.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
@@ -17,13 +18,14 @@
       "test/**/*.test.ts"
     ],
     "concurrency": 5,
-		"failFast": true,
+    "failFast": true,
     "require": [
       "ts-node/register"
     ]
   },
   "scripts": {
-    "test": "ava"
+    "build": "tsc",
+    "test": "nyc ava"
   },
   "author": "",
   "license": "ISC"

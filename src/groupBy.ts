@@ -6,7 +6,7 @@ const groupBy = <T, X, V extends { [key: string]: X[] }>(identifier: (t: T) => s
     return {} as V;
   }
   return items.reduce((acc, item) => {
-    const key = identifier(item) ?? '__routine$__defaultKey';
+    const key = identifier(item) ?? undefined;
     if (isNullOrEmpty(acc[key])) {
       return { ...acc, [key]: [item] };
     }
