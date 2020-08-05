@@ -5,11 +5,25 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "ava": "^3.11.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "files": [
+      "test/**/*.test.ts"
+    ],
+    "concurrency": 5,
+		"failFast": true,
+    "require": [
+      "ts-node/register"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "author": "",
   "license": "ISC"
