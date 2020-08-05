@@ -1,0 +1,16 @@
+{
+  "name": "yahl",
+  "version": "1.0.0",
+  "description": "A micro-library that provides helper / utility functions for your day-to-day js code.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
