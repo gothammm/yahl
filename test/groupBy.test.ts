@@ -1,5 +1,5 @@
 import test from 'ava';
-import groupBy from '../src/groupBy';
+import { groupBy } from '../src/groupBy';
 
 test(`should return empty for non-happy cases`, t => {
   t.deepEqual(groupBy(t => t, [] as string[]), {});
