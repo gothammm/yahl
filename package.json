@@ -1,6 +1,6 @@
 {
   "name": "yahl",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A micro-library that provides helper / utility functions for your day-to-day js code.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
