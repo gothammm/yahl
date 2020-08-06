@@ -1,7 +1,7 @@
-import isNotNullOrEmpty from "./isNotNullOrEmpty";
+import { isNotNullOrEmpty } from "./isNotNullOrEmpty";
 
 
-const filterNotNull = <T>(fn: (t: T) => T | null | undefined, t: T[]): T[] => {
+export const filterNotNull = <T>(fn: (t: T) => T | null | undefined, t: T[]): T[] => {
   return t.reduce((acc, item) => {
     if (isNotNullOrEmpty(item)) {
       return [...acc, item];
@@ -9,5 +9,3 @@ const filterNotNull = <T>(fn: (t: T) => T | null | undefined, t: T[]): T[] => {
     return acc;
   }, [] as T[]);
 }
-
-export default filterNotNull;

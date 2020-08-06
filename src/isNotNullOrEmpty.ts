@@ -1,5 +1,3 @@
-import isNullOrEmpty from './isNullOrEmpty';
+import { isNullOrEmpty } from './isNullOrEmpty';
 
-const isNotNullOrEmpty = <T>(t: T): boolean => !isNullOrEmpty(t);
-
-export default isNotNullOrEmpty;
+export const isNotNullOrEmpty = <T>(t: T): boolean => !isNullOrEmpty(t);

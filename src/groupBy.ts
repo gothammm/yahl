@@ -1,7 +1,7 @@
-import isArray from "./isArray";
-import isNullOrEmpty from "./isNullOrEmpty";
+import { isArray } from "./isArray";
+import { isNullOrEmpty } from "./isNullOrEmpty";
 
-const groupBy = <T, X, V extends { [key: string]: X[] }>(identifier: (t: T) => string, items: T[]): V => {
+export const groupBy = <T, X, V extends { [key: string]: X[] }>(identifier: (t: T) => string, items: T[]): V => {
   if (!isArray(items) || isNullOrEmpty(items)) {
     return {} as V;
   }
@@ -13,5 +13,3 @@ const groupBy = <T, X, V extends { [key: string]: X[] }>(identifier: (t: T) => s
     return { ...acc, [key]: [...acc[key], item] };
   }, {} as V);
 }
-
-export default groupBy;

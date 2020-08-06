@@ -1,5 +1,5 @@
 import test from 'ava';
-import tail from '../src/tail';
+import { tail } from '../src/tail';
 
 
 test(`should return tail item for happy cases`, t => {

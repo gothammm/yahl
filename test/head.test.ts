@@ -1,5 +1,5 @@
 import test from 'ava';
-import head from '../src/head';
+import { head } from '../src/head';
 
 
 test(`should return head item for happy cases`, t => {

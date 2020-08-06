@@ -1,5 +1,5 @@
 import test from 'ava';
-import isNullOrEmpty from '../src/isNullOrEmpty';
+import { isNullOrEmpty } from '../src/isNullOrEmpty';
 
 test(`should return true for happy cases`, t => {
   t.true(isNullOrEmpty({}));

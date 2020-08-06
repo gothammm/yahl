@@ -2,7 +2,7 @@
   "name": "yahl",
   "version": "1.0.1",
   "description": "A micro-library that provides helper / utility functions for your day-to-day js code.",
-  "main": "src",
+  "main": "dist/index.js",
   "dependencies": {},
   "devDependencies": {
     "ava": "^3.11.1",
