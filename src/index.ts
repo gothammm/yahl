@@ -8,3 +8,4 @@ export * from './isNullOrEmpty';
 export * from './isObject';
 export * from './mapNotNull';
 export * from './tail';
+export * from './flatMap';
